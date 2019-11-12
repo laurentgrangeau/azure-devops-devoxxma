@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: laurentgrangeauazuredevopsdevoxxma 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: laurentgrangeauazuredevopsdevoxxma 
+    spec:
+      containers:
+        - name: laurentgrangeauazuredevopsdevoxxma 
+          image: devoxxma.azurecr.io/laurentgrangeauazuredevopsdevoxxma
+          ports:
+          - containerPort: 8080
